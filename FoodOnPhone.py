@@ -3,8 +3,7 @@
 from datetime import datetime 
 from datetime import date 
 from time import sleep 
-import os,requests,json,socket,sys
-from typing import Awaitable
+import os,socket,sys
 from dhooks import Webhook 
 import pyfiglet
 
@@ -13,9 +12,7 @@ result = pyfiglet.figlet_format("FOOD  ON  PHONE", font = "big" )
 
 nointernet = pyfiglet.figlet_format("No Internet", font = "banner" )
 
-hook = Webhook('https://discord.com/api/webhooks/1115209485489819658/fe8Oad_dHgLH6Mlmc9MP26oQ2HTFGYza7S1Z7nAGHFQIBhaKxae1Hv1Ygys0SM66sStY')
-
-base_url ="https://api.telegram.org/bot5025449698:AAE4PBTZcS0CWT45SVraDppXmjkp4_nmuKY/sendMessage"
+hook = Webhook('Enter Your API here')
 
 today = date.today()
 
